@@ -1,3 +1,4 @@
+
 package tp_git;
 
 import java.util.ArrayList;
@@ -27,8 +28,8 @@ public class System_hospitalier {
 
     public void recevoirRequete(Requête requete) {
         listRequetes.add(requete);
-        String analyse =  analyserRequete(requete);
-        String comparaisonDonnees = comparerDonnes();
+        String analyse =  analyserRequete(requete); // la fonction analyse requete
+        String comparaisonDonnees = comparerDonnes(); // la fonction comparer donnees
         System.out.println(analyse);
         System.out.println(comparaisonDonnees);
     }
@@ -42,5 +43,5 @@ public class System_hospitalier {
         
         return "Cluster trouvé";
     }
-
+// le programme sert a trouver des cluster pour une requete envoyee²
 }
